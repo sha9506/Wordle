@@ -2,17 +2,29 @@ import React, { useState } from "react";
 import './Landing.css';
 
 
-const Landing= ({setPlayerName, playerName , setPageNumber})=>
+const Landing= ({setPlayerName, playerName , setPageNumber, levelName, setlevelName, selectedLevel, setSelectedLevel})=>
 {
+  
+    const handleLevel=(item)=>
+    {
+        setSelectedLevel(item)
+    }
+
     const[errorMessage, setErrorMessage] = useState();
 
     const handleStart=()=>
     {
-        if(playerName){
-            console.log(playerName);
+       
+       
+        if(playerName && selectedLevel){
+            setPageNumber(2);
             setErrorMessage(null);
         }
-        else{
+        else if(playerName){
+            setErrorMessage("Please select a level of difficulty");
+        }
+        else
+        {
             setErrorMessage("Please enter username");
         }
              
@@ -25,9 +37,11 @@ const Landing= ({setPlayerName, playerName , setPageNumber})=>
              <div className="info-text">Enter the User Name here</div>
         </div>
         <div className="levels">
-            <div className="level-item">Easy</div>
-            <div  className="level-item" >Medium</div>
-            <div  className="level-item" >Hard</div>
+            {
+                levelName.map((item)=>{
+                    return( <div className={selectedLevel===item? "clicked-item":"level-item"} onClick={()=>{handleLevel(item)}}>{item}</div>)
+                })
+            }
         </div>
         <div className="start-item">
              <button className="start" onClick={handleStart}>START THE GAME</button>

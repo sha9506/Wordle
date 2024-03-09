@@ -1,0 +1,88 @@
+.game-main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.wordle-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: 987px;
+}
+
+.wordle-head
+{
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+    font-family:'sans-serif';
+}
+.date
+{
+    font-size: 36px;
+    color: #6F7276;
+    font-weight: bolder;
+}
+.letters
+{
+    height: 740px;
+    width: 600px;
+}
+.submit
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #CED5DB;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+.side-bar
+{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.head-item
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.playername
+{
+    font-size: 36px;
+    font-weight: bolder;
+    align-self: center;
+    margin-left: 20px;
+    color: #6F7276;
+}
+.guess
+{
+    margin-top: 30px;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+.list
+{
+    height: 580px;
+    margin-top: 40px;
+}
+.mode
+{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #6F7276;
+    display: flex;
+    flex-direction: row;
+}
+.mode-select
+{
+    color: #F5793A;
+}

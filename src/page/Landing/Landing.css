@@ -24,6 +24,7 @@
     font-size: 90px;
     color: #82BBF2;
     font-weight: bold;
+    text-align: center;
 }
 .info-text
 {
@@ -58,6 +59,21 @@
 {
     color: #D96C35;
 }
+.clicked-item
+{
+    width: 258px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #D96C35;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #934B27;
+    margin-left: 20px;
+    padding-top: 30px;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
 .start-item
 {
     display: flex;
@@ -74,8 +90,6 @@
     box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
     font-size: 48px;
     color: #547596;
     font-weight: bold;
