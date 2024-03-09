@@ -6,7 +6,7 @@ import Result from './page/Result/Result';
 
 const App =()=>{
 
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(2);
   const[playerName, setPlayerName]= useState();
   const[levelName, setLevelName]=useState(
     [
@@ -28,7 +28,10 @@ const App =()=>{
         setSelectedLevel={setSelectedLevel}/> : null
       }
       {
-        pageNumber===2? <Game playerName={playerName} selectedLevel={selectedLevel}/> : null
+        pageNumber===2? <Game 
+        playerName={playerName} 
+        selectedLevel={selectedLevel}
+        /> : null
       }
       {
         pageNumber===3? <Result/> : null

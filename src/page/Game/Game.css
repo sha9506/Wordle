@@ -86,3 +86,19 @@
 {
     color: #F5793A;
 }
+
+.letter-box
+{
+    width: 100px;
+    height: 100px;
+    background-color: #2D3047;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 48px;
+    text-align: center;
+    color: #6F7276;
+    font-weight: bolder;
+}
+
