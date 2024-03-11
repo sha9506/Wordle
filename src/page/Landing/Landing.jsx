@@ -33,13 +33,15 @@ const Landing= ({setPlayerName, playerName , setPageNumber, levelName, setlevelN
     return(<div>
         <div className="title">WORDLE</div>
         <div className="input-item">
-             <input className="username" name="username" onChange={(event)=>{ setPlayerName(event.target.value)}}/>
+             <input className="username" name="username"
+              onChange={(event)=>{ setPlayerName(event.target.value)}}/>
              <div className="info-text">Enter the User Name here</div>
         </div>
         <div className="levels">
             {
                 levelName.map((item)=>{
-                    return( <div className={selectedLevel===item? "clicked-item":"level-item"} onClick={()=>{handleLevel(item)}}>{item}</div>)
+                    return( <div className={selectedLevel===item? "clicked-item":"level-item"} 
+                    onClick={()=>{handleLevel(item)}}>{item}</div>)
                 })
             }
         </div>

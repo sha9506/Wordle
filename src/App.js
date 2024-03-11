@@ -6,7 +6,7 @@ import Result from './page/Result/Result';
 
 const App =()=>{
 
-  const [pageNumber, setPageNumber] = useState(2);
+  const [pageNumber, setPageNumber] = useState(1);
   const[playerName, setPlayerName]= useState();
   const[levelName, setLevelName]=useState(
     [
